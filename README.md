@@ -11,3 +11,9 @@ sudo /usr/bin/postgresql-setup --initdb
 ```shell
 SHOW data_directory;
 ```
+
+- see the password encryption
+
+```shell
+SHOW password_encryption;
+```
