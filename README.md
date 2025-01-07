@@ -14,6 +14,9 @@ cd postgresql-9.4.26
 ./configure
 make
 sudo make install
+
+echo 'export PATH=/usr/local/pgsql/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 - installation of postgres last version
