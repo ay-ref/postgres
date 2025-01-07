@@ -1,10 +1,36 @@
 # postgres
 
+## installation
+
+- installation of postgres 9.4
+
+```shell
+wget https://ftp.postgresql.org/pub/source/v9.4.26/postgresql-9.4.26.tar.gz
+tar -xvzf postgresql-9.4.26.tar.gz
+cd postgresql-9.4.26
+```
+
+```shell
+./configure
+make
+sudo make install
+```
+
+- installation of postgres last version
+
+```shell
+sudo apt install postgresql postgresql-contrib postgresql-server
+```
+
+## commands
+
 - initial new postgres app
 
 ```shell
 sudo /usr/bin/postgresql-setup --initdb
 ```
+
+## psql shell
 
 - find data directory
 
