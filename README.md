@@ -17,3 +17,20 @@ SHOW data_directory;
 ```shell
 SHOW password_encryption;
 ```
+
+- see the port
+
+```shell
+show port;
+```
+
+## files
+
+### `somedirectory/postgresql.conf`
+
+- general configs
+
+- possible pathes
+  - `/etc/postgresql/<version>/main/`
+  - `/etc/pgsql/<version>/main/`
+  - `/var/lib/postgresql/data/`
