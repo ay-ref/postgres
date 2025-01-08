@@ -11,7 +11,7 @@ cd postgresql-9.4.26
 ```
 
 ```shell
-./configure
+./configure --without-readline --without-zlib
 make
 sudo make install
 
