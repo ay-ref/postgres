@@ -47,10 +47,14 @@ SHOW data_directory;
 SHOW password_encryption;
 ```
 
-- see the port
+- see the port and ip
 
 ```shell
 show port;
+```
+
+```shell
+SELECT inet_server_addr();
 ```
 
 ## files
