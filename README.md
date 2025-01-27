@@ -25,7 +25,7 @@ source ~/.bashrc
 sudo apt install postgresql postgresql-contrib postgresql-server
 ```
 
-## commands
+## cli
 
 - initial new postgres app
 
@@ -33,7 +33,29 @@ sudo apt install postgresql postgresql-contrib postgresql-server
 sudo /usr/bin/postgresql-setup --initdb
 ```
 
+```shell
+initdb your_path
+```
+
+- backup database
+
+```shell
+pg_dump -U myuser -h localhost -p 5432 mydatabase > mydatabase_backup.sql
+```
+
+- restore database
+
+```shell
+psql -U myuser -h localhost -p 5432 -d mydatabase -f mydatabase_backup.sql
+```
+
+```shell
+pg_restore -U myuser -h localhost -p 5432 -d mydatabase mydatabase_backup.dump
+```
+
 ## psql shell
+
+### configs
 
 - find data directory
 
@@ -56,6 +78,38 @@ show port;
 ```shell
 SELECT inet_server_addr();
 ```
+
+- see databases
+
+```shell
+\l
+```
+
+- see users
+
+```shell
+\du
+```
+
+- see table
+
+```shell
+\dt
+```
+
+- quit
+
+```shell
+\q
+```
+
+- help
+
+```shell
+\?
+```
+
+### sql
 
 ## files
 
