@@ -57,6 +57,12 @@ pg_restore -U myuser -h localhost -p 5432 -d mydatabase mydatabase_backup.dump
 
 ### configs
 
+- version
+
+```shell
+select version();
+```
+
 - find data directory
 
 ```shell
@@ -78,6 +84,18 @@ show port;
 ```shell
 SELECT inet_server_addr();
 ```
+
+- see available extensions
+
+```shell
+select * from pg_available_extension;
+```
+
+```shell
+select * from pg_extension;
+```
+
+### controls
 
 - see databases
 
