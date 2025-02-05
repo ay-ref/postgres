@@ -2,6 +2,9 @@
 
 ## installation
 
+
+- if you dont install or make the `contrib` some postgress features does not work, for example complete `restore`.
+
 - installation of postgres 9.4
 
 ```shell
