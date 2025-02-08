@@ -2,6 +2,9 @@
 
 ## installation
 
+
+- **if you dont install or make the `contrib` some postgress features does not work, for example complete `restore`.**
+
 - installation of postgres 9.4
 
 ```shell
@@ -69,6 +72,12 @@ vacuumdb -h hostname -p port_number -U postgres -j 4 -z -v -a
 
 ### configs
 
+- version
+
+```shell
+select version();
+```
+
 - find data directory
 
 ```shell
@@ -90,6 +99,18 @@ show port;
 ```shell
 SELECT inet_server_addr();
 ```
+
+- see available extensions
+
+```shell
+select * from pg_available_extension;
+```
+
+```shell
+select * from pg_extension;
+```
+
+### controls
 
 - see databases
 
