@@ -53,6 +53,18 @@ psql -U myuser -h localhost -p 5432 -d mydatabase -f mydatabase_backup.sql
 pg_restore -U myuser -h localhost -p 5432 -d mydatabase mydatabase_backup.dump
 ```
 
+- vacuum on database
+
+```shell
+vacuumdb -h hostname -p port_number -U postgres -j 4 -z -v db_name
+```
+
+- on entire instance
+
+```shell
+vacuumdb -h hostname -p port_number -U postgres -j 4 -z -v -a
+```
+
 ## psql shell
 
 ### configs
@@ -107,6 +119,30 @@ SELECT inet_server_addr();
 
 ```shell
 \?
+```
+
+- change the database
+
+```shell
+\c mydatabase;
+```
+
+- vacuum your table
+
+```shell
+vacuum table_name;
+```
+
+- vacuum and analyze table
+
+```shell
+vacuum analyze table_name;
+```
+
+- vacuum and analyze table with verbose
+
+```shell
+vacuum verbose analyze table_name;  
 ```
 
 ### sql
