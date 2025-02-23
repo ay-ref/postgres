@@ -163,7 +163,7 @@ vacuum analyze table_name;
 - vacuum and analyze table with verbose
 
 ```shell
-vacuum verbose analyze table_name;  
+vacuum verbose analyze table_name;
 ```
 
 ### sql
@@ -178,3 +178,9 @@ vacuum verbose analyze table_name;
   - `/etc/postgresql/<version>/main/`
   - `/etc/pgsql/<version>/main/`
   - `/var/lib/postgresql/data/`
+
+## pgadmin
+
+- this is very funny, but just now happened for someone:
+  - **the copy server in the pgadmin menu toolbar just copy the
+    connection not the files :/**
