@@ -184,3 +184,10 @@ vacuum verbose analyze table_name;
 - this is very funny, but just now happened for someone:
   - **the copy server in the pgadmin menu toolbar just copy the
     connection not the files :/**
+
+## what the hells
+
+- scenario
+  - assume you have a table with `id autoincrement` and `field unique`
+  - you go to insert new record with already existed unique field and get error
+  - but id incremented by one, it seems strange! 
