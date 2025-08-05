@@ -168,6 +168,18 @@ vacuum verbose analyze table_name;
 
 ### sql
 
+- just remember in tech we are not logical
+
+```sql
+SELECT 1 WHERE NULL=NULL;
+-- nothing output
+
+SELECT 1 WHERE NULL!=NULL;
+-- nothing output
+```
+
+- **SO BE CAREFUL AT UNIQUE INDEX THAT IS NULL-ABLE**
+
 ## files
 
 ### `somedirectory/postgresql.conf`
