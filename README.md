@@ -28,6 +28,14 @@ source ~/.bashrc
 sudo apt install postgresql postgresql-contrib postgresql-server
 ```
 
+## config 
+
+- postgres read connection config (internall firewall) in `pg_hba.conf`
+  **from up to down to find a match for ip**!
+  - in this file you should specify **ip range** not **ip**!
+
+> `/32` means 32 bit of ip are **unchangble**
+
 ## cli
 
 - initial new postgres app
