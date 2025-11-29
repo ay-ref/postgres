@@ -1,6 +1,8 @@
 import psycopg2
 from psycopg2 import sql
-import tempconf as config
+
+# you should add config file from config.template.py
+import config
 
 host = config.host
 user = config.username

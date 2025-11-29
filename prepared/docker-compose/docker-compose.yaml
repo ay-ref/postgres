@@ -6,7 +6,7 @@ services:
     ports:
       - "5434:5432"
     environment:
-      POSTGRES_USER: abbas
+      POSTGRES_USER: ay
       POSTGRES_PASSWORD: 1
     volumes:
       - pgdata:/var/lib/postgresql/data
@@ -20,8 +20,8 @@ services:
     ports:
       - "8888:80"
     environment:
-      PGADMIN_DEFAULT_USERNAME: abbas
-      PGADMIN_DEFAULT_EMAIL: abbas@gmail.com
+      PGADMIN_DEFAULT_USERNAME: ay
+      PGADMIN_DEFAULT_EMAIL: a@g.com
       PGADMIN_DEFAULT_PASSWORD: 1
     volumes:
       - pgadmindata:/var/lib/pgadmin
